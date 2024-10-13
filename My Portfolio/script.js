@@ -1,20 +1,20 @@
-let menu  = document.querySelector('#menu-icon');
+let menu = document.querySelector("#menu-icon");
 
-let navbar= document.querySelector('.navbar');
+let navbar = document.querySelector(".navbar");
 
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
-window.onscroll = () =>{
-    menu.classList.remove('bx-x');
-    navbar.classList.remove('active');
-}
-const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer',"App Developer"],
-    
-    typeSpeed: 80,
-    backSpeed: 80,
-    backDelay: 1200,
-    loop: true,
-  });
+menu.onclick = () => {
+  menu.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+};
+window.onscroll = () => {
+  menu.classList.remove("bx-x");
+  navbar.classList.remove("active");
+};
+const typed = new Typed(".multiple-text", {
+  strings: ["a Frontend Developer", "a Backend Developer", "an App Developer"],
+
+  typeSpeed: 80,
+  backSpeed: 80,
+  backDelay: 1200,
+  loop: true,
+});
