@@ -3,172 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
     <title>Saren Sokmeak - Portfolio</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header section -->
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
 
-    <header class="header">
-      <a href="#home" class="logo">Saren Sokmeak</a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#testimonial">Testimonial</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="nav-container">
+        <a href="#home" class="logo">Saren Sokmeak</a>
+        <nav class="navbar" id="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="bx bx-moon"></i>
+          </button>
+        </nav>
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
     </header>
 
-    <!-- Home section -->
-
+    <!-- Home Section -->
     <section class="home" id="home">
-      <div class="home-img">
-        <img src="./assets/SAREN_SOKMEAK_Suit_V2.JPG" alt="profile" />
-      </div>
       <div class="home-content">
         <h3>Hello, I'm</h3>
         <h1>Saren Sokmeak</h1>
         <h3>And I'm <span class="multiple-text"></span></h3>
         <p>
           I specialize in designing and building <strong>websites</strong> and
-          <strong>applications </strong> that are both functional and visually
+          <strong>applications</strong> that are both functional and visually
           appealing. Whether it's turning ideas into responsive websites or
           developing mobile apps that enhance user experiences, my goal is to
-          deliver high-quality, impactful projects. Explore my work, and let’s
+          deliver high-quality, impactful projects. Explore my work, and let's
           connect to bring your vision to life.
         </p>
         <div class="social-media">
           <a
-            href="https://www.linkedin.com/in/sokmeak-saren-940a3123a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2B%2F93v%2BNHThu8%2FeuYsD0s2A%3D%3D"
-            target="_blank">
-            <i class="bx bxl-linkedin"></i
-          ></a>
+            href="https://www.linkedin.com/in/sokmeak-saren-940a3123a"
+            target="_blank"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
           <a href="https://www.facebook.com/sok.meak.1376" target="_blank">
-            <i class="bx bxl-facebook"></i
-          ></a>
-          <a href="https://github.com/Sokmeak/My-Portfolio" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://github.com/Sokmeak/My-Portfolio" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
           <a href="https://x.com/SokmeakSaren" target="_blank">
-            <i class="bx bxl-twitter"></i
-          ></a>
+            <i class="bx bxl-twitter"></i>
+          </a>
         </div>
-
         <a
           href="http://drive.google.com/uc?export=download&id=1YNwEq757Pto5tcp82bxkh8-bQYxo9PyK"
           class="btn"
-          >Download CV</a
         >
+          Download CV
+        </a>
+      </div>
+      <div class="home-img">
+        <img
+          src="./assets/SAREN_SOKMEAK_Suit_V2.JPG"
+          alt="profile"
+          class="floating"
+        />
       </div>
     </section>
-    <!-- About section -->
-    <section class="about" id="about">
+
+    <!-- About Section -->
+    <section class="about section reveal" id="about">
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
         <h3>I'm a <span>Software Developer</span></h3>
         <p>
-          Hi, I’m <strong style="color: #075b7b">Sokmeak</strong>, a web and
+          Hi, I'm <strong style="color: #6366f1">Sokmeak</strong>, a web and
           mobile app developer who loves solving problems and creating useful
           digital products. I first got interested in tech by wondering how
           websites work, and that curiosity turned into a career. Over time,
-          I’ve learned a lot about building websites, creating mobile apps, and
+          I've learned a lot about building websites, creating mobile apps, and
           designing user-friendly experiences, working on projects for small
           businesses and personal projects.
         </p>
-
         <a href="https://about.me/" target="_blank" class="btn">Read More</a>
       </div>
-
       <div class="about-img">
         <img src="./assets/pamlTree.jpg" alt="About img" />
       </div>
     </section>
 
-    <!-- Skills section -->
-
-    <section class="skills" id="skills">
+    <!-- Skills Section -->
+    <section class="skills section reveal" id="skills">
       <h2 class="heading">My <span>Skills</span></h2>
       <div class="skills-container">
         <div class="skill-box">
-          <i class="bx bx-code"> </i>
-
+          <i class="bx bx-code"></i>
           <h3>Web Development</h3>
-
           <p>
-            <!-- Web development refers to the process of building and maintaining
-            websites. It involves coding and programming to create websites that
-            function properly, look good, and offer a smooth user experience.
-            Web development includes front-end development (what users see on
-            the website), back-end development (how the website works behind the
-            scenes), and full-stack development, which combines both. -->
-
-            I’m a web developer who builds user-friendly, responsive websites. I
+            I'm a web developer who builds user-friendly, responsive websites. I
             focus on creating sites that look great and work smoothly. From
             designing the layout to coding the back-end, I handle all parts of
             the development process to ensure the website meets both user needs
             and business goals.
           </p>
-
           <a
             href="https://webdesigner.withgoogle.com/"
             class="btn"
-            target="_blank">
-            Read More</a
+            target="_blank"
           >
+            Read More
+          </a>
         </div>
 
         <div class="skill-box">
-          <i class="bx bxl-apple"> </i>
-
+          <i class="bx bxl-apple"></i>
           <h3>App Development</h3>
-
           <p>
-            I’m a mobile app developer who creates easy-to-use, high-performing
+            I'm a mobile app developer who creates easy-to-use, high-performing
             apps for both iOS and Android. I focus on making apps that solve
             real problems and offer a smooth experience. From designing how the
             app looks to making sure it works well behind the scenes, I handle
             every part of the process to meet the needs of users and businesses.
           </p>
-
           <a
             href="https://developers.google.com/focus/mobile-app-development"
             target="_blank"
-            class="btn">
-            Read More</a
+            class="btn"
           >
+            Read More
+          </a>
         </div>
 
         <div class="skill-box">
-          <i class="bx bx-palette"> </i>
-
+          <i class="bx bx-palette"></i>
           <h3>UI/UX Design</h3>
-
           <p>
-            I’m a UI/UX designer who focuses on creating intuitive,
+            I'm a UI/UX designer who focuses on creating intuitive,
             user-friendly designs. My goal is to make digital products easy to
             use and visually appealing. I work on the overall look (UI) and how
             users interact with the product (UX), ensuring that every design
             decision improves the experience and meets user needs.
           </p>
-
           <a
             href="https://www.figma.com/resource-library/difference-between-ui-and-ux/"
             class="btn"
-            target="_blank">
-            Read More</a
+            target="_blank"
           >
+            Read More
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Testimonial Section -->
-
-    <section class="testimonial" id="testimonial">
+    <section class="testimonial section reveal" id="testimonial">
       <div class="testimonial-box">
         <h2 class="heading">Testimonials</h2>
         <div class="wrapper">
@@ -176,53 +179,54 @@
             <img src="./assets/newTestimonial.jpg" alt="testimonial1" />
             <h2>Marilyn</h2>
             <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
             </div>
             <p>
-              Working with <strong style="color: #075b7b">Sokmeak</strong> was
+              Working with <strong style="color: #6366f1">Sokmeak</strong> was
               an absolute pleasure. They developed a mobile app for my business
               that exceeded my expectations. The app was beautifully designed
-              and ran smoothly, even with complex features. [Your Name]
+              and ran smoothly, even with complex features.
+              <strong style="color: #6366f1">Sokmeak</strong>
               communicated clearly, listened to my needs, and delivered on time.
-              I highly recommend them!"
+              I highly recommend them!
             </p>
           </div>
 
           <div class="testimonial-item">
-            <img src="./assets/testimonial2.jpg" alt="testimonial1" />
+            <img src="./assets/testimonial2.jpg" alt="testimonial2" />
             <h2>James</h2>
             <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
             </div>
             <p>
-              <strong style="color: #075b7b">Sokmeak</strong> built our
-              startup's website, and I’m very happy with the results. They
+              <strong style="color: #6366f1">Sokmeak</strong> built our
+              startup's website, and I'm very happy with the results. They
               created a modern, responsive design that captured our brand
               perfectly. The site works well on all devices, and the user
               experience is excellent. Their attention to detail was impressive.
-              I would definitely work with them again!"
+              I would definitely work with them again!
             </p>
           </div>
 
           <div class="testimonial-item">
-            <img src="./assets/testimonial3.jpg" alt="testimonial1" />
+            <img src="./assets/testimonial3.jpg" alt="testimonial3" />
             <h2>Aleska</h2>
             <div class="rating">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
             </div>
             <p>
-              "<strong style="color: #075b7b">Sokmeak</strong> is a fantastic
+              <strong style="color: #6366f1">Sokmeak</strong> is a fantastic
               UI/UX designer. They designed the user interface for our web
               platform, focusing on both looks and usability. They understood
               our users and created a seamless experience, which helped our
@@ -234,54 +238,78 @@
       </div>
     </section>
 
-    <!-- contact section -->
-
-    <section class="contact" id="contact">
+    <!-- Contact Section -->
+    <section class="contact section reveal" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
-
       <form action="#">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" name="email" placeholder="Email Address" />
+          <input type="text" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
         </div>
-
         <div class="input-box">
-          <input type="number" placeholder="Phone number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="tel" placeholder="Phone Number" />
+          <input type="text" placeholder="Email Subject" required />
         </div>
         <textarea
           name="message"
-          id=""
           cols="30"
           rows="10"
-          placeholder="Your Message"></textarea>
+          placeholder="Your Message"
+          required
+        ></textarea>
         <input type="submit" value="Send Message" class="btn" />
       </form>
     </section>
 
-    <!-- Footer section -->
-
+    <!-- Footer -->
     <footer class="footer">
       <div class="social">
         <a
-          href="https://www.linkedin.com/in/sokmeak-saren-940a3123a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2B%2F93v%2BNHThu8%2FeuYsD0s2A%3D%3D"
-          target="_blank">
-          <i class="bx bxl-linkedin"></i
-        ></a>
+          href="https://www.linkedin.com/in/sokmeak-saren-940a3123a"
+          target="_blank"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </a>
         <a href="https://www.facebook.com/sok.meak.1376" target="_blank">
-          <i class="bx bxl-facebook"></i
-        ></a>
-        <a href="https://github.com/Sokmeak/My-Portfolio" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://github.com/Sokmeak" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
         <a href="https://x.com/SokmeakSaren" target="_blank">
-          <i class="bx bxl-twitter"></i
-        ></a>
+          <i class="bx bxl-twitter"></i>
+        </a>
       </div>
-      <p class="copyright">&copy;Saren Sokmeak -All Rights Reserved</p>
+      <p class="copyright">&copy; 2024 Saren Sokmeak - All Rights Reserved</p>
     </footer>
 
+    <!-- JavaScript -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "mD63zH3nxTHg3jKLE",
+        });
+      })();
+    </script>
+
     <script src="script.js"></script>
+
+    <script>
+      window.env = {
+        EMAIL_SERVICE_ID: "service_c59m59r",
+        EMAIL_TEMPLATE_ID: "template_e6ahhmh",
+        EMAIL_PUBLIC_KEY: "mD63zH3nxTHg3jKLE",
+      };
+    </script>
   </body>
 </html>
